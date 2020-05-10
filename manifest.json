@@ -1,0 +1,21 @@
+{
+  "name": "Tab Inspector",
+  "description": "Utility for working with the extension tabs api",
+  "version": "0.3",
+  "permissions": [
+    "webNavigation",
+    "activeTab"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["*://*"],
+    "js": ["content.js"]
+  }],
+  "manifest_version": 2,
+  "icons": {
+    "16": "./cloudflare.png"
+  }
+}

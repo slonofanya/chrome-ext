@@ -1,0 +1,1 @@
+lert('test ext');
