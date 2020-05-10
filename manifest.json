@@ -1,9 +1,9 @@
 {
-  "name": "Tab Inspector",
-  "description": "Utility for working with the extension tabs api",
-  "version": "0.3",
+  "name": "SL",
+  "description": "Some usedull things",
+  "version": "0.0",
   "permissions": [
-    "webNavigation",
+    "storage",
     "activeTab"
   ],
   "background": {
@@ -11,11 +11,14 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [{
-    "matches": ["*://*"],
+    "matches": ["<all_urls>"],
     "js": ["content.js"]
   }],
   "manifest_version": 2,
   "icons": {
-    "16": "./cloudflare.png"
+    "16": "./cloudflare.png",
+    "32": "./cloudflare.png",
+    "48": "./cloudflare.png",
+    "128": "./cloudflare.png"
   }
 }
