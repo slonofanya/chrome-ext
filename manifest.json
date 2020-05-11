@@ -1,9 +1,8 @@
 {
-  "name": "SL",
-  "description": "Some usedull things",
+  "name": "Twich watch helper",
+  "description": "Help me to watch twitch streams.",
   "version": "1",
   "permissions": [
-    "storage",
     "activeTab"
   ],
   "background": {
@@ -11,7 +10,7 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [{
-    "matches": ["<all_urls>"],
+    "matches": ["https://www.twitch.tv/*"],
     "js": ["content.js"]
   }],
   "manifest_version": 2,
