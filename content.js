@@ -8,7 +8,7 @@ setInterval(() => {
     twichPointsButton.click();
   }
 
-  const wasdButtons = document.querySelector('.gifts-info__buttons');
+  const wasdButtons = document.querySelectorAll('.gifts-info__buttons');
 
   if (wasdButtons) {
     const dron = wasdButtons[0];
