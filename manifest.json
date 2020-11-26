@@ -11,8 +11,8 @@
   },
   "content_scripts": [{
     "matches": [
-      "*//www.twitch.tv/*",
-      "*//wasd.tv/*"
+      "https://www.twitch.tv/*",
+      "https://wasd.tv/*"
     ],
     "js": ["content.js"]
   }],
