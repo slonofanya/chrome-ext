@@ -18,7 +18,6 @@ setInterval(() => {
     if (dron) {
 	    const has10 = dron.nextElementSibling.innerText.indexOf('10 COINS');
 	    const isDronEnabled = isEnabled(dron)
-	    console.log({ has10, isDronEnabled});
 
 	    if (has10 && isDronEnabled) {
 	      dron.click();
