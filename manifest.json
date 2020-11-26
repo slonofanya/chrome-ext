@@ -10,7 +10,10 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [{
-    "matches": ["https://www.twitch.tv/*"],
+    "matches": [
+      "https://www.twitch.tv/*",
+      "https://wasd.tv/a5ton/*"
+    ],
     "js": ["content.js"]
   }],
   "manifest_version": 2,
