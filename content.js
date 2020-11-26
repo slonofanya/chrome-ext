@@ -16,7 +16,7 @@ setInterval(() => {
     const dron = wasdButtons[0];
 
     if (dron) {
-	    const has10 = dron.nextElementSibling.innerText.indexOf('10 COINS');
+	    const has10 = dron.nextElementSibling.innerText.indexOf('10 COINS') > -1;
 	    const isDronEnabled = isEnabled(dron)
 
 	    if (has10 && isDronEnabled) {
