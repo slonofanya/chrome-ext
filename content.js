@@ -9,6 +9,7 @@ setInterval(() => {
   }
 
   const wasdButtons = document.querySelectorAll('.gifts-info__buttons');
+  console.log({ wasdButtons });
 
   if (wasdButtons) {
     const dron = wasdButtons[0];
