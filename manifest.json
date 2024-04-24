@@ -9,12 +9,6 @@
     "*://*/*"
   ],
   "optional_host_permissions": [],
-  "background": {
-    "persistent": false,
-    "scripts": [
-      "background.js"
-    ]
-  },
   "content_scripts": [
     {
       "matches": [
