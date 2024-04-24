@@ -5,18 +5,27 @@
   "permissions": [
     "activeTab"
   ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "optional_host_permissions": [],
   "background": {
     "persistent": false,
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
-  "content_scripts": [{
-    "matches": [
-      "https://www.twitch.tv/*",
-      "https://wasd.tv/*"
-    ],
-    "js": ["content.js"]
-  }],
-  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.twitch.tv/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "manifest_version": 3,
   "icons": {
     "16": "./cloudflare.png",
     "32": "./cloudflare.png",
